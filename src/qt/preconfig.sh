@@ -27,6 +27,10 @@ else
     C_ZLIB=' -system-zlib'
 fi
 
+# always use bundled libpng(version requirement is severe)
+C_LIBPNG=' -qt-libpng'
+
+
 # These libraries are somewhat more unstable and/or inconsistently
 # available; default to the bundled copies on all platforms.
 C_PCRE=' -qt-pcre'
